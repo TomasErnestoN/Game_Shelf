@@ -42,7 +42,24 @@ Ambiente de Execução: XAMPP
 
 📂 Organização de Diretórios
 
-
+/CATALOGO-DE-JOGOS-PROJETO
+│
+├── /admin
+│   └── admin.php
+│
+├── /auth
+│   ├── cadastro.php
+│   ├── login.php
+│   ├── logout.php
+│   └── registrar.php
+│
+├── /config
+│   └── conexao.php
+│
+├── /assets
+│   └── style.css
+│
+└── README.md
 
 ---
 
