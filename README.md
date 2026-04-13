@@ -40,24 +40,25 @@ Ambiente de Execução: XAMPP
 
 ---
 
-📂 Organização de Diretórios
+📂 Estrutura do Projeto
 
     /CATALOGO-DE-JOGOS-PROJETO
     │
-    ├── /admin
-    │   └── admin.php
+    ├── /public
+    │ ├── admin.php # Tela de login
+    │ ├── cadastro.php # Tela de cadastro
+    │ └── painel.php # Área protegida (admin)
     │
-    ├── /auth
-    │   ├── cadastro.php
-    │   ├── login.php
-    │   ├── logout.php
-    │   └── registrar.php
+    ├── /routes
+    │ ├── login.php # Processa login
+    │ ├── registrar.php # Processa cadastro
+    │ └── logout.php # Logout do sistema
     │
     ├── /config
-    │   └── conexao.php
+    │ └── conexao.php # Conexão com banco de dados
     │
     ├── /assets
-    │   └── style.css
+    │ └── style.css # Estilos do projeto
     │
     └── README.md
 
