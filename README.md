@@ -40,27 +40,38 @@ Ambiente de Execução: XAMPP
 
 ---
 
-📂 Estrutura do Projeto
-
-    /CATALOGO-DE-JOGOS-PROJETO
-    │
-    ├── /public
-    │ ├── admin.php # Tela de login
-    │ ├── cadastro.php # Tela de cadastro
-    │ └── painel.php # Área protegida (admin)
-    │
-    ├── /routes
-    │ ├── login.php # Processa login
-    │ ├── registrar.php # Processa cadastro
-    │ └── logout.php # Logout do sistema
-    │
-    ├── /config
-    │ └── conexao.php # Conexão com banco de dados
-    │
-    ├── /assets
-    │ └── style.css # Estilos do projeto
-    │
-    └── README.md
+📂 CATALOGO-DE-JOGOS-PROJETO
+│
+├── /admin
+│   ├── crud.admin
+│   ├── cadastro.php      # Cadastro de usuário
+│   ├── login.php         # Tela de login
+│   ├── logout.php        # Logout do sistema
+│   └── painel_admin.php  # Painel administrativo (área protegida)
+│
+├── /banco
+│   └── script.sql        # Script do banco de dados
+│
+├── /includes
+│   └── conexao.php       # Conexão com o banco de dados
+│
+├── /index
+│   ├── index.php         # Página principal
+│   ├── sidebar.php       # Menu lateral
+│   ├── upperbar.php      # Barra superior
+│   │
+│   ├── /Capas
+│   │   ├── capa.png
+│   │   ├── capa1.png
+│   │   ├── capa2.png
+│   │   └── capa3.png
+│   │
+│   └── /CSS
+│       └── estilo.css.txt
+│
+├── upperbar.php          # (arquivo duplicado fora da pasta index)
+│
+└── README.md
 
 ---
 
