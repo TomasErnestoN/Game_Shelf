@@ -1,0 +1,101 @@
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 7px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  }
+
+  .topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #247BA0;
+  padding: relative;
+  gap: 8px;
+}
+
+/* cada lado ocupa espaço */
+.esquerda,
+.centro,
+.direita {
+  display: flex;
+  align-items: center;
+}
+
+/* centraliza a logo DE VERDADE */
+.centro {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* botão admin */
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+}
+
+.admin-login img {
+  width: 18px;
+}
+
+  .games {
+    color: #011864fb;
+  }
+  
+  .shelf {
+    color: #ffffff;
+  }
+  
+  /* Ajuste da imagem */
+  .logo-img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* centraliza verticalmente */
+    width: 185px;
+    opacity: 0.9;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #252535f1;
+  }
+
+  .menu {
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+  }
+
+  .logo {
+text-decoration: none;
+color: inherit;
+display: inline-block;
+cursor: pointer; /* 👈 força aparecer mãozinha */
+}
+
+  /* Grid */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .card {
+    height: 200px;   /* mais alto */
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+  }
