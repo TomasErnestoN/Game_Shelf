@@ -1,2 +1,2 @@
-# Catal-go-de-jogos-PROJETO
+# Game Shelf
 Projeto Senai de Desenvolvimento de sistemas
