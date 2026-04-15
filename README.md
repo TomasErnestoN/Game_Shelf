@@ -1,4 +1,4 @@
-🎮 Games Shell — Sistema de Catálogo e Comparação de Jogos
+Games Shellf — Sistema de Catálogo e Comparação de Jogos
 
 
 O Games Shell é uma aplicação web desenvolvida para centralizar informações de jogos digitais e facilitar a comparação de preços entre diferentes lojas.  
@@ -6,18 +6,18 @@ O sistema possui uma área pública para visualização dos jogos e um painel ad
 
 ---
 
-🛠️ Stack Utilizada
+Stack Utilizada
 
 Back-end: PHP 8+  
-Front-end: HTML5, CSS3 (Flexbox/Grid), JavaScript  
+Front-end: HTML5, CSS3 (Flexbox/Grid) 
 Banco de Dados: MySQL (MySQL Workbench)  
 Ambiente de Execução: XAMPP  
 
 ---
 
-👥 Organização do Desenvolvimento
+Organização do Desenvolvimento
 
-🧑‍💻 Back-end (PHP)
+Back-end (PHP)
 - Implementação da conexão com o banco de dados
 - Desenvolvimento do sistema de autenticação (login com sessão)
 - Criação das operações de CRUD (Create, Read, Update, Delete)
@@ -25,14 +25,14 @@ Ambiente de Execução: XAMPP
 - Upload e armazenamento de imagens na pasta /uploads
 - Proteção de rotas administrativas
 
-🎨 Front-end (HTML, CSS, JavaScript)
+Front-end (HTML, CSS)
 - Construção das interfaces (catálogo, login e painel admin)
 - Desenvolvimento de layout responsivo
 - Estruturação da vitrine de jogos
 - Integração com dados dinâmicos via PHP
 - Organização visual e experiência do usuário
 
-🗄️ Banco de Dados (MySQL)
+Banco de Dados (MySQL)
 - Modelagem das tabelas
 - Criação do script inicial (script.sql)
 - Definição dos campos e estrutura de armazenamento
@@ -75,7 +75,7 @@ Ambiente de Execução: XAMPP
 
 ---
 
-🔄 Fluxo de Versionamento
+Fluxo de Versionamento
 
 O projeto segue um padrão de desenvolvimento baseado em branches:
 
@@ -85,7 +85,7 @@ O projeto segue um padrão de desenvolvimento baseado em branches:
 
 ---
 
-💡 Boas Práticas Adotadas
+Boas Práticas Adotadas
 
 - Processamento PHP no topo dos arquivos
 - Separação lógica entre front-end e back-end
@@ -95,7 +95,7 @@ O projeto segue um padrão de desenvolvimento baseado em branches:
 
 ---
 
-📈 Evoluções Planejadas
+Evoluções Planejadas
 
 - Suporte a múltiplas lojas por jogo
 - Sistema de busca e filtros
@@ -105,7 +105,7 @@ O projeto segue um padrão de desenvolvimento baseado em branches:
 
 ---
 
-🎯 Finalidade
+Finalidade
 
 Projeto desenvolvido com foco em prática real de desenvolvimento web, trabalho em equipe e construção de portfólio técnico.
 
