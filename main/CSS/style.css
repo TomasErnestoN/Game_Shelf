@@ -92,10 +92,22 @@ cursor: pointer; /* 👈 força aparecer mãozinha */
     max-width: 800px;
     margin: auto;
   }
-
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+background: black; /* opcional, pra preencher espaço vazio */
+  }
   .card {
-    height: 200px;   /* mais alto */
-    background: white;
+    width: 200px;
+    aspect-ratio: 2 / 3; /* 🔥 resolve tudo automaticamente */
     border: 2px solid black;
     border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05);
   }
