@@ -39,28 +39,20 @@
   align-items: center;
   text-decoration: none;
   font-size: 10px;
-  color: black;
+  font-family: Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  
 }
 
 .admin-login img {
-  width: 18px;
+  width: 40px;
+  
 }
 
-  .games {
-    color: #011864fb;
-  }
-  
-  .shelf {
-    color: #ffffff;
-  }
-  
   /* Ajuste da imagem */
   .logo-img {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%); /* centraliza verticalmente */
-    width: 185px;
+    width: 200px; /* ajuste como quiser */
+    height: auto;
     opacity: 0.9;
   }
 

@@ -8,19 +8,13 @@
   </div>
 
   <div class="centro">
-    <h1 class = "games">
-      Games
-      
-    </h1>
-    <h1 class = "shelf">
-      Shelf
-      
-    </h1>
+  <img src="Capas/Logo.png" alt="Logo" class="logo-img">
+
   </div>
 
   <div class="direita">
-    <a href="/admin-login" class="admin-login">
-      <img src="Capas/admin.png" alt="Admin">
+    <a href="../admin/login.php" class="admin-login">
+      <img src="Capas/admin.jpeg" alt="Admin">
       <span>É admin?</span>
     </a>
   </div>
