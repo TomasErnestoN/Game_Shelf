@@ -1,5 +1,6 @@
 <?php
 require_once "upperbar.php";
+require_once "sidebar.php";
 
 ?>
 
@@ -11,7 +12,7 @@ require_once "upperbar.php";
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <title>Games. Shelf</title>
 </head>
-
+<body>
   <div class="container">
     <div class="card"></div>
     <div class="card"></div>
@@ -28,3 +29,9 @@ require_once "upperbar.php";
 
 </body>
 </html>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
