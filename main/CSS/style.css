@@ -87,7 +87,63 @@ cursor: pointer; /* 👈 força aparecer mãozinha */
 
   .card {
     height: 200px;   /* mais alto */
-    background: white;
+    background: rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 8px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ADMIN CSS LOGIN */
+
+  .fundo {
+    font-family: Arial;
+    background:rgb(255, 255, 255);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+  background: #2f7c99;
+  padding: 60px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
+
+}
+
+.escreval {
+    width: 94%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background: #45a049;
+}
