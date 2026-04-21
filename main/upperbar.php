@@ -15,7 +15,8 @@
   </div>
 
   <div class="direita">
-    <a href="../admin/login.php" class="admin-login">
+    <a href="#rodape" class="sobre-nos">Sobre nós</a>
+      <a href="../admin/login.php" class="admin-login">
       <img src="Capas/admin.png" alt="Admin">
       <span>É admin?</span>
     </a>

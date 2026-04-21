@@ -13,6 +13,7 @@ require_once "sidebar.php";
   <title>Games. Shelf</title>
 </head>
 <body>
+  <div class="fundo">
   <div class="container">
     <div class="card"></div>
     <div class="card"></div>
@@ -26,6 +27,40 @@ require_once "sidebar.php";
     <div class="card"></div>
     <div class="card"></div>
   </div>
+</div>
+
+
+
+
+
+
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+window.onload = function() {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+};
+</script>
+
+
+<?php
+require_once "rodape.php";
+?>
+
+
+
+
 
 </body>
 </html>

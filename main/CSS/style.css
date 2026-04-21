@@ -1,3 +1,6 @@
+  /* UPPERBAR */
+  
+
   .topo {
   display: flex;
   align-items: center;
@@ -45,7 +48,8 @@
   align-items: center;
   text-decoration: none;
   font-size: 10px;
-  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
   color: rgb(255, 255, 255);
   
 }
@@ -71,21 +75,55 @@
     transform: scale(1.30);
   }
 
+.sobre-nos {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
+.sobre-nos:hover {
+  transform: scale(1.2);
+  background: rgba(255,255,255,0.1);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU INICIAL */
 
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #151a22f1;
+    background: #fffffff1;
+      color: #000;
+      transition: 0.3s;
   }
 
-  .menu {
-    position: absolute;
-    left: 20px;
-    font-size: 24px;
-  }
-
-  /* Grid */
+  body.dark {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+}
+  
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -105,15 +143,14 @@
 
 
 
-/* Sidebar escondida */
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   top: 0;
   left: -250px; /* escondida fora da tela */
   width: 250px;
   height: 100%;
-  background: #2f7c99;
-  color: white;
+  background: linear-gradient(190deg, #2f7c99, #3c91b0);
   transition: left 0.3s ease;
   padding-top: 80px;
   z-index: 999;
@@ -134,15 +171,17 @@
 .sidebar li {
   list-style: none;
   padding: 15px 20px;
+  transition: transform 0.2s ease;
 }
 
 .sidebar li:hover {
   list-style: none;
   background: rgba(255,255,255,0.1);
+    transform: scale(1.2);
 }
 
 .sidebar a{
-  list-style: none;
+  text-decoration: none;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
@@ -150,3 +189,69 @@
   text-align: center;
   
 }
+
+/* MODO DARK */
+
+.modo-dark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.modo-dark img {
+  width: 40px;
+  transition: transform 0.2s ease;
+}
+
+.modo-dark img:hover {
+  transform: scale(1.2);
+    list-style: none;
+  background: rgba(255,255,255,0.1);
+}
+
+
+
+
+
+
+
+/* RODAPÉ */
+
+.rodape {
+  background: linear-gradient(90deg, #2f7c99, #3c91b0);
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: down;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.rodape-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.github-img{
+    display: flex;
+  flex-direction: column;
+  align-items: right;
+  text-decoration: none;
+  width: 70px;
+  transition: transform 0.2s ease;
+}
+
+.github-img:hover {
+  transform: scale(1.2);
+  background: rgba(255,255,255,0.1);
+}
+
+.rodape-direita {
+max-width: 50%;
+}
+
+
