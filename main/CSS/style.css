@@ -1,20 +1,17 @@
-
-.logo {
-    font-weight: bold;
-    font-size: 22px;
-    color: white;
-    letter-spacing: 7px;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-  }
+  /* UPPERBAR */
+  
 
   .topo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #247BA0;
+  background: linear-gradient(90deg, #2f7c99, #3c91b0);
   padding: relative;
   gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 8px rgba(0,0,0,0.15);
 }
 
 /* cada lado ocupa espaço */
@@ -30,7 +27,19 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
 }
+
+.white-bars {
+ width: 40px;
+ cursor: pointer;
+ transition: transform 0.2s ease;
+}
+
+.white-bars:hover {
+  transform: scale(1.30);
+}
+
 
 /* botão admin */
 .admin-login {
@@ -39,43 +48,82 @@
   align-items: center;
   text-decoration: none;
   font-size: 10px;
-  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
   color: rgb(255, 255, 255);
   
 }
 
 .admin-login img {
   width: 40px;
-  
+  transition: transform 0.2s ease;
+}
+
+.admin-login img:hover {
+  transform: scale(1.30);
 }
 
   /* Ajuste da imagem */
   .logo-img {
-    width: 200px; /* ajuste como quiser */
-    height: auto;
-    opacity: 0.9;
+    display: block;
+    max-height: 50px; /* ajuste conforme sua navbar */
+    width: auto;
+    transition: transform 0.2s ease;
   }
+  
+  .logo-img:hover {
+    transform: scale(1.30);
+  }
+
+.sobre-nos {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.sobre-nos:hover {
+  transform: scale(1.2);
+  background: rgba(255,255,255,0.1);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU INICIAL */
 
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #252535f1;
+    background: #fffffff1;
+      color: #000;
+      transition: 0.3s;
   }
 
-  .menu {
-    position: absolute;
-    left: 20px;
-    font-size: 24px;
-  }
-
-  .logo {
-text-decoration: none;
-color: inherit;
-display: inline-block;
-cursor: pointer; /* 👈 força aparecer mãozinha */
+  body.dark {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
 }
-
-  /* Grid */
+  
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,15 +134,82 @@ cursor: pointer; /* 👈 força aparecer mãozinha */
   }
 
   .card {
-    height: 200px;   /* mais alto */
-    background: rgb(255, 255, 255);
-    border: 2px solid black;
-    border-radius: 8px;
+    height: 350px;   /* mais alto */
+    background: #ffffff;
+    border: 0.5px solid black;
+    border-radius: 1px;
   }
 
 
 
 
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* escondida fora da tela */
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(190deg, #2f7c99, #3c91b0);
+  transition: left 0.3s ease;
+  padding-top: 80px;
+  z-index: 999;
+}
+
+/* Quando ativa */
+.sidebar.active {
+  left: 0;
+}
+
+/* Itens */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 15px 20px;
+  transition: transform 0.2s ease;
+}
+
+.sidebar li:hover {
+  list-style: none;
+  background: rgba(255,255,255,0.1);
+    transform: scale(1.2);
+}
+
+.sidebar a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  
+}
+
+/* MODO DARK */
+
+.modo-dark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.modo-dark img {
+  width: 40px;
+  transition: transform 0.2s ease;
+}
+
+.modo-dark img:hover {
+  transform: scale(1.2);
+    list-style: none;
+  background: rgba(255,255,255,0.1);
+}
 
 
 
@@ -102,48 +217,41 @@ cursor: pointer; /* 👈 força aparecer mãozinha */
 
 
 
+/* RODAPÉ */
 
+.rodape {
+  background: linear-gradient(90deg, #2f7c99, #3c91b0);
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: down;
+  padding: 20px;
+  margin-top: 40px;
+}
 
+.rodape-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
 
-  /* ADMIN CSS LOGIN */
-
-  .fundo {
-    font-family: Arial;
-    background:rgb(255, 255, 255);
-    color: #fff;
+.github-img{
     display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: right;
+  text-decoration: none;
+  width: 70px;
+  transition: transform 0.2s ease;
 }
 
-.login-box {
-  background: #2f7c99;
-  padding: 60px;
-  border-radius: 5px;
-  width: 300px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
-
+.github-img:hover {
+  transform: scale(1.2);
+  background: rgba(255,255,255,0.1);
 }
 
-.escreval {
-    width: 94%;
-    padding: 10px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 5px;
+.rodape-direita {
+max-width: 50%;
 }
 
-.botao {
-    width: 100%;
-    padding: 10px;
-    background: #4CAF50;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-.botao:hover {
-    background: #45a049;
-}
