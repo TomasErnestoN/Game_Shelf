@@ -3,23 +3,20 @@
 ?>
   <header class="topo">
 
-  <div class="esquerda">
-    ☰
+  <div class="esquerda" onclick="toggleSidebar()">
+  <img src="Capas/whiteBars.png" alt="Bars" class="white-bars">
+    
   </div>
 
   <div class="centro">
-    <h1 class = "games">
-      Games
-      
-    </h1>
-    <h1 class = "shelf">
-      Shelf
-      
-    </h1>
+  <a href="index.php">
+  <img src="Capas/Logo.png" alt="Logo" class="logo-img">
+  </a>
   </div>
 
   <div class="direita">
-    <a href="/admin-login" class="admin-login">
+    <a href="#rodape" class="sobre-nos">Sobre nós</a>
+      <a href="../admin/login.php" class="admin-login">
       <img src="Capas/admin.png" alt="Admin">
       <span>É admin?</span>
     </a>
