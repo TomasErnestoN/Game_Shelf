@@ -1,10 +1,12 @@
 <?php
-// Inicia sessão
 session_start();
 
-// Destroi sessão (desloga)
+// Apaga todas as variáveis da sessão
+$_SESSION = [];
+
+// Destrói a sessão
 session_destroy();
 
-// Volta pro login
+// Redireciona pro login
 header("Location: login.php");
 exit();

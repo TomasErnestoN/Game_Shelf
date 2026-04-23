@@ -1,14 +1,14 @@
 Games Shellf — Sistema de Catálogo e Comparação de Jogos
 
 
-O Games Shell é uma aplicação web desenvolvida para centralizar informações de jogos digitais e facilitar a comparação de preços entre diferentes lojas.  
+O Games Shell é uma aplicação web desenvolvida para centralizar informações de jogos digitais. 
 O sistema possui uma área pública para visualização dos jogos e um painel administrativo responsável pelo gerenciamento completo dos dados.
 
 ---
 
 Stack Utilizada
 
-Back-end: PHP 8+  
+Back-end: PHP 8+ Javascript 
 Front-end: HTML5, CSS3 (Flexbox/Grid) 
 Banco de Dados: MySQL (MySQL Workbench)  
 Ambiente de Execução: XAMPP  
@@ -38,43 +38,6 @@ Banco de Dados (MySQL)
 - Definição dos campos e estrutura de armazenamento
 - Suporte na integração com o back-end
 
----
-
-    📂 CATALOGO-DE-JOGOS-PROJETO
-    │
-    ├── /admin
-    │   ├── crud.admin
-    │   ├── cadastro.php      # Cadastro de usuário
-    │   ├── login.php         # Tela de login
-    │   ├── logout.php        # Logout do sistema
-    │   └── painel_admin.php  # Painel administrativo (área protegida)
-    │
-    ├── /banco
-    │   └── script.sql        # Script do banco de dados
-    │
-    ├── /includes
-    │   └── conexao.php       # Conexão com o banco de dados
-    │
-    ├── /index
-    │   ├── index.php         # Página principal
-    │   ├── sidebar.php       # Menu lateral
-    │   ├── upperbar.php      # Barra superior
-    │   │
-    │   ├── /Capas
-    │   │   ├── capa.png
-    │   │   ├── capa1.png
-    │   │   ├── capa2.png
-    │   │   └── capa3.png
-    │   │
-    │   └── /CSS
-    │       └── estilo.css.txt
-    │
-    ├── upperbar.php          # (arquivo duplicado fora da pasta index)
-    │
-    └── README.md
-
----
-
 Fluxo de Versionamento
 
 O projeto segue um padrão de desenvolvimento baseado em branches:
@@ -96,12 +59,9 @@ Boas Práticas Adotadas
 ---
 
 Evoluções Planejadas
-
-- Suporte a múltiplas lojas por jogo
 - Sistema de busca e filtros
 - Paginação de resultados
 - Melhorias de interface
-- Possível no futuro deploy em ambiente online
 
 ---
 
